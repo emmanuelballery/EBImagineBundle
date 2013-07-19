@@ -1,0 +1,29 @@
+{
+    "name": "emmanuelballery/eb-imaginebundle",
+    "description": "EBImagineBundle",
+    "homepage": "https://github.com/emmanuelballery/EBImagineBundle.git",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/emmanuelballery/EBImagineBundle.git"
+        }
+    ],
+    "authors": [
+        {
+            "name": "Emmanuel BALLERY",
+            "email": "emmanuel.ballery@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/framework-bundle": "2.*",
+        "avalanche123/imagine-bundle": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "EB\\ImagineBundle": ""
+        }
+    },
+    "target-dir": "EB/ImagineBundle"
+}
