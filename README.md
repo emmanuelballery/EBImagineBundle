@@ -1,6 +1,15 @@
 EBImagineBundle
 ===============
 
+Add imagine filters :
+  - width : Fixed width, ratio is conserved
+  - height : Fixed height, ratio is conserved
+  - border : Add borders
+  - grayscale : Change the color map to grayscale
+  - rotate : Rotate the image
+
+Some examples of configuration :
+
 ``` yaml
 # app/config/config.yml
 
@@ -59,6 +68,8 @@ avalanche_imagine:
         angle: 20
         size: [50, 50]
 ```
+
+Use cases :
 
 ``` jinja
 {# test.html.twig #}
