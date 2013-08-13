@@ -15,7 +15,7 @@ use Symfony\Component\DependencyInjection\Loader;
 class EBImagineExtension extends Extension
 {
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function load(array $configs, ContainerBuilder $container)
     {
