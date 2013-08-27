@@ -2,13 +2,13 @@ EBImagineBundle
 ===============
 
 Add imagine filters :
-  - width : Fixed width, ratio is conserved
-  - height : Fixed height, ratio is conserved
+  - width : Fixed width, ratio is preserved
+  - height : Fixed height, ratio is preserved
   - border : Add borders
-  - grayscale : Change the color map to grayscale
+  - grayscale : Grayscale
   - rotate : Rotate the image
 
-Some examples of configuration :
+Some configuration examples :
 
 ``` yaml
 # app/config/config.yml
