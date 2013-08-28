@@ -2,7 +2,7 @@
 
 namespace EB\ImagineBundle\Filter;
 
-use Avalanche\Bundle\ImagineBundle\Imagine\Filter\LoaderInterface;
+use Avalanche\Bundle\ImagineBundle\Imagine\Filter\Loader\LoaderInterface;
 use EB\ImagineBundle\Filter\WidthFilter;
 use Symfony\Component\HttpFoundation\ParameterBag;
 

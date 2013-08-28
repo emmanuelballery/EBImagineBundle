@@ -6,7 +6,7 @@
         <parameter key="eb_imagine.filter.width.loader.class">EB\ImagineBundle\Filter\WidthFilterLoader</parameter>
         <parameter key="eb_imagine.filter.height.loader.class">EB\ImagineBundle\Filter\HeightFilterLoader</parameter>
         <parameter key="eb_imagine.filter.border.loader.class">EB\ImagineBundle\Filter\BorderFilterLoader</parameter>
-        <parameter key="eb_imagine.filter.grayscal.loader.class">EB\ImagineBundle\Filter\GrayscaleFilterLoader</parameter>
+        <parameter key="eb_imagine.filter.grayscale.loader.class">EB\ImagineBundle\Filter\GrayscaleFilterLoader</parameter>
         <parameter key="eb_imagine.filter.rotate.loader.class">EB\ImagineBundle\Filter\RotateFilterLoader</parameter>
     </parameters>
     <services>
@@ -19,8 +19,8 @@
         <service id="eb_imagine.filter.border.loader" class="%eb_imagine.filter.border.loader.class%">
             <tag name="imagine.filter.loader" filter="border"/>
         </service>
-        <service id="eb_imagine.filter.grayscal.loader" class="%eb_imagine.filter.grayscal.loader.class%">
-            <tag name="imagine.filter.loader" filter="grayscal"/>
+        <service id="eb_imagine.filter.grayscale.loader" class="%eb_imagine.filter.grayscale.loader.class%">
+            <tag name="imagine.filter.loader" filter="grayscale"/>
         </service>
         <service id="eb_imagine.filter.rotate.loader" class="%eb_imagine.filter.rotate.loader.class%">
             <tag name="imagine.filter.loader" filter="rotate"/>
