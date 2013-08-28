@@ -1,7 +1,7 @@
 EBImagineBundle
 ===============
 
-# Filter "width" : fixed width with preserved ratio
+## Filter "width" : fixed width with preserved ratio
 
 ``` yaml
 # app/config/config.yml
@@ -23,7 +23,7 @@ avalanche_imagine:
 <img src="{{ '/path/to/image'|apply_filter('width_filter_example') }}">
 ````
 
-# Filter "height" : fixed height with preserved ratio
+## Filter "height" : fixed height with preserved ratio
 
 ``` yaml
 # app/config/config.yml
@@ -45,7 +45,7 @@ avalanche_imagine:
 <img src="{{ '/path/to/image'|apply_filter('height_filter_example') }}">
 ````
 
-# Filter "border" : add borders
+## Filter "border" : add borders
 
 ``` yaml
 # app/config/config.yml
@@ -92,7 +92,7 @@ avalanche_imagine:
 <img src="{{ '/path/to/image'|apply_filter('border_angle_filter_example') }}">
 ```
 
-# Filter "grayscale" : convert in grayscale
+## Filter "grayscale" : convert in grayscale
 
 ``` yaml
 # app/config/config.yml
@@ -118,7 +118,7 @@ avalanche_imagine:
 <img src="{{ '/path/to/image'|apply_filter('grayscale50_filter_example') }}">
 ````
 
-# Filter "rotate" : rotate the image
+## Filter "rotate" : rotate the image
 
 ``` yaml
 # app/config/config.yml
