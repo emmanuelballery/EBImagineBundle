@@ -30,6 +30,8 @@ avalanche_imagine:
 <img src="{{ '/path/to/image'|apply_filter('width_filter_example') }}">
 ````
 
+![width_filter_example](/Resources/demo/width_filter_example.jpg "width_filter_example")
+
 ## Filter "height" : fixed height with preserved ratio
 
 Options :
@@ -54,6 +56,8 @@ avalanche_imagine:
 
 <img src="{{ '/path/to/image'|apply_filter('height_filter_example') }}">
 ````
+
+![height_filter_example](/Resources/demo/height_filter_example.jpg "height_filter_example")
 
 ## Filter "border" : add borders
 
@@ -109,6 +113,12 @@ avalanche_imagine:
 <img src="{{ '/path/to/image'|apply_filter('border_angle_filter_example') }}">
 ```
 
+![border_filter_example](/Resources/demo/border_filter_example.jpg "border_filter_example")
+![border50_filter_example](/Resources/demo/border50_filter_example.jpg "border50_filter_example")
+![border_big_filter_example](/Resources/demo/border_big_filter_example.jpg "border_big_filter_example")
+![border_red_filter_example](/Resources/demo/border_red_filter_example.jpg "border_red_filter_example")
+![border_angle_filter_example](/Resources/demo/border_angle_filter_example.jpg "border_angle_filter_example")
+
 ## Filter "grayscale" : convert in grayscale
 
 Options :
@@ -137,6 +147,9 @@ avalanche_imagine:
 <img src="{{ '/path/to/image'|apply_filter('grayscale_filter_example') }}">
 <img src="{{ '/path/to/image'|apply_filter('grayscale50_filter_example') }}">
 ````
+
+![grayscale_filter_example](/Resources/demo/grayscale_filter_example.jpg "grayscale_filter_example")
+![grayscale50_filter_example](/Resources/demo/grayscale50_filter_example.jpg "grayscale50_filter_example")
 
 ## Filter "rotate" : rotate the image
 
@@ -176,3 +189,7 @@ avalanche_imagine:
 <img src="{{ '/path/to/image'|apply_filter('rotate_red_filter_example') }}">
 <img src="{{ '/path/to/image'|apply_filter('rotate50_filter_example') }}">
 ````
+
+![rotate_filter_example](/Resources/demo/rotate_filter_example.jpg "rotate_filter_example")
+![rotate_red_filter_example](/Resources/demo/rotate_red_filter_example.jpg "rotate_red_filter_example")
+![rotate50_filter_example](/Resources/demo/rotate50_filter_example.jpg "rotate50_filter_example")
