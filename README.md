@@ -3,6 +3,8 @@ EBImagineBundle
 
 This bundle is a demo of usefull AvalancheImage filters (https://github.com/avalanche123/AvalancheImagineBundle).
 
+![default](/Resources/demo/default.jpg "default")
+
 ## Filter "width" : fixed width with preserved ratio
 
 Options :
