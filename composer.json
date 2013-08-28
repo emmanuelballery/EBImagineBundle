@@ -17,7 +17,7 @@
         }
     ],
     "require": {
-        "symfony/framework-bundle": "2.*",
+        "symfony/symfony": "*",
         "avalanche123/imagine-bundle": "*"
     },
     "autoload": {

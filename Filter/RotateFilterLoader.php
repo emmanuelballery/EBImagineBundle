@@ -3,8 +3,8 @@
 namespace EB\ImagineBundle\Filter;
 
 use Avalanche\Bundle\ImagineBundle\Imagine\Filter\LoaderInterface;
-use EB\ImagineBundle\Configuration\Collection;
 use EB\ImagineBundle\Filter\RotateFilter;
+use Symfony\Component\HttpFoundation\ParameterBag;
 
 /**
  * Class RotateFilterLoader
@@ -20,7 +20,7 @@ class RotateFilterLoader implements LoaderInterface
      */
     public function load(array $options = array())
     {
-        $conf = new Collection($options);
+        $conf = new ParameterBag($options);
         $angle = $conf->get('angle');
         $bg = $conf->get('bg');
         $size = $conf->get('size');

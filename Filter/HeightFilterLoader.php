@@ -3,8 +3,8 @@
 namespace EB\ImagineBundle\Filter;
 
 use Avalanche\Bundle\ImagineBundle\Imagine\Filter\LoaderInterface;
-use EB\ImagineBundle\Configuration\Collection;
 use EB\ImagineBundle\Filter\HeightFilter;
+use Symfony\Component\HttpFoundation\ParameterBag;
 
 /**
  * Class HeightFilterLoader
@@ -20,7 +20,7 @@ class HeightFilterLoader implements LoaderInterface
      */
     public function load(array $options = array())
     {
-        $conf = new Collection($options);
+        $conf = new ParameterBag($options);
         $height = $conf->get('height', 10);
 
         return new HeightFilter($height);
