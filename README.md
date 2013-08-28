@@ -114,9 +114,13 @@ avalanche_imagine:
 ```
 
 ![border_filter_example](/Resources/demo/border_filter_example.jpg "border_filter_example")
+
 ![border50_filter_example](/Resources/demo/border50_filter_example.jpg "border50_filter_example")
+
 ![border_big_filter_example](/Resources/demo/border_big_filter_example.jpg "border_big_filter_example")
+
 ![border_red_filter_example](/Resources/demo/border_red_filter_example.jpg "border_red_filter_example")
+
 ![border_angle_filter_example](/Resources/demo/border_angle_filter_example.jpg "border_angle_filter_example")
 
 ## Filter "grayscale" : convert in grayscale
@@ -149,6 +153,7 @@ avalanche_imagine:
 ````
 
 ![grayscale_filter_example](/Resources/demo/grayscale_filter_example.jpg "grayscale_filter_example")
+
 ![grayscale50_filter_example](/Resources/demo/grayscale50_filter_example.jpg "grayscale50_filter_example")
 
 ## Filter "rotate" : rotate the image
@@ -191,5 +196,7 @@ avalanche_imagine:
 ````
 
 ![rotate_filter_example](/Resources/demo/rotate_filter_example.jpg "rotate_filter_example")
+
 ![rotate_red_filter_example](/Resources/demo/rotate_red_filter_example.jpg "rotate_red_filter_example")
+
 ![rotate50_filter_example](/Resources/demo/rotate50_filter_example.jpg "rotate50_filter_example")
