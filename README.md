@@ -1,14 +1,7 @@
 EBImagineBundle
 ===============
 
-Add imagine filters :
-  - width : Fixed width, ratio is preserved
-  - height : Fixed height, ratio is preserved
-  - border : Add borders
-  - grayscale : Grayscale
-  - rotate : Rotate the image
-
-Some configuration examples :
+# Filter "width" : fixed width with preserved ratio
 
 ``` yaml
 # app/config/config.yml
@@ -18,73 +11,143 @@ avalanche_imagine:
   cache_prefix: files/cache
   driver: gd
   filters:
-    width:
+    width_filter_example:
       type: width
       options:
         width: 100
-    height:
+```
+
+``` jinja
+{# test.html.twig #}
+
+<img src="{{ '/path/to/image'|apply_filter('width_filter_example') }}">
+````
+
+# Filter "height" : fixed height with preserved ratio
+
+``` yaml
+# app/config/config.yml
+
+avalanche_imagine:
+  web_root: '%kernel.root_dir%/../web'
+  cache_prefix: files/cache
+  driver: gd
+  filters:
+    height_filter_example:
       type: height
       options:
         height: 100
-    border:
+```
+
+``` jinja
+{# test.html.twig #}
+
+<img src="{{ '/path/to/image'|apply_filter('height_filter_example') }}">
+````
+
+# Filter "border" : add borders
+
+``` yaml
+# app/config/config.yml
+
+avalanche_imagine:
+  web_root: '%kernel.root_dir%/../web'
+  cache_prefix: files/cache
+  driver: gd
+  filters:
+    # color : #CCCCCC, width = 1px, picture size unchanged
+    border_filter_example:
       type: border
       options: []
-    border50:
+    # color : #CCCCCC, width = 1px, picture size : 50x50
+    border50_filter_example:
       type: border
       options:
         size: [50, 50]
-    borderBig:
+    # color : #CCCCCC, width = 5px, picture size unchanged
+    border_big_filter_example:
       type: border
       options:
         width: 5
-    borderRed:
+    # color : #FF0000, width = 5px, picture size unchanged
+    border_red_filter_example:
       type: border
       options:
         color: 'FF0000'
-    borderAngle:
+    # color : #FF0000, width = 5px, picture size unchanged, rotation of 20°, background filled with color #FF0000
+    border_angle_filter_example:
       type: border
       options:
         angle: 20
         bg: 'FF0000'
-    grayscale:
+```
+
+``` jinja
+{# test.html.twig #}
+
+<img src="{{ '/path/to/image'|apply_filter('border_filter_example') }}">
+<img src="{{ '/path/to/image'|apply_filter('border50_filter_example') }}">
+<img src="{{ '/path/to/image'|apply_filter('border_big_filter_example') }}">
+<img src="{{ '/path/to/image'|apply_filter('border_red_filter_example') }}">
+<img src="{{ '/path/to/image'|apply_filter('border_angle_filter_example') }}">
+```
+
+# Filter "grayscale" : convert in grayscale
+
+``` yaml
+# app/config/config.yml
+
+avalanche_imagine:
+  web_root: '%kernel.root_dir%/../web'
+  cache_prefix: files/cache
+  driver: gd
+  filters:
+    grayscale_filter_example:
       type: grayscale
       options: []
-    grayscale50:
+    grayscale50_filter_example:
       type: grayscale
       options:
         size: [50, 50]
-    rotate:
+```
+
+``` jinja
+{# test.html.twig #}
+
+<img src="{{ '/path/to/image'|apply_filter('grayscale_filter_example') }}">
+<img src="{{ '/path/to/image'|apply_filter('grayscale50_filter_example') }}">
+````
+
+# Filter "rotate" : rotate the image
+
+``` yaml
+# app/config/config.yml
+
+avalanche_imagine:
+  web_root: '%kernel.root_dir%/../web'
+  cache_prefix: files/cache
+  driver: gd
+  filters:
+    rotate_filter_example:
       type: rotate
       options:
         angle: 20
-    rotateRed:
+    rotate_red_filter_example:
       type: rotate
       options:
         angle: 20
         bg: 'FF0000'
-    rotate50:
+    rotate50_filter_example:
       type: rotate
       options:
         angle: 20
         size: [50, 50]
 ```
 
-Use cases :
-
 ``` jinja
 {# test.html.twig #}
 
-<img src="{{ src }}">
-<img src="{{ src|apply_filter('width') }}">
-<img src="{{ src|apply_filter('height') }}">
-<img src="{{ src|apply_filter('border') }}">
-<img src="{{ src|apply_filter('border50') }}">
-<img src="{{ src|apply_filter('borderBig') }}">
-<img src="{{ src|apply_filter('borderRed') }}">
-<img src="{{ src|apply_filter('borderAngle') }}">
-<img src="{{ src|apply_filter('grayscale') }}">
-<img src="{{ src|apply_filter('grayscale50') }}">
-<img src="{{ src|apply_filter('rotate') }}">
-<img src="{{ src|apply_filter('rotateRed') }}">
-<img src="{{ src|apply_filter('rotate50') }}">
+<img src="{{ '/path/to/image'|apply_filter('rotate_filter_example') }}">
+<img src="{{ '/path/to/image'|apply_filter('rotate_red_filter_example') }}">
+<img src="{{ '/path/to/image'|apply_filter('rotate50_filter_example') }}">
 ````
