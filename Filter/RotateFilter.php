@@ -31,9 +31,9 @@ class RotateFilter implements FilterInterface
     private $size = null;
 
     /**
-     * @param float      $angle
-     * @param null       $bg
-     * @param array      $size
+     * @param float $angle
+     * @param null  $bg
+     * @param array $size
      */
     public function __construct($angle, $bg = null, array $size = null)
     {
@@ -55,7 +55,7 @@ class RotateFilter implements FilterInterface
     {
         $image->rotate($this->angle, $this->bg);
         if ($this->size) {
-            return $image->thumbnail($this->size, ManipulatorInterface::THUMBNAIL_OUTBOUND);
+            return $image->thumbnail($this->size, ManipulatorInterface::THUMBNAIL_INSET);
         }
 
         return $image;
