@@ -3,7 +3,6 @@
 namespace EB\ImagineBundle\Filter;
 
 use Avalanche\Bundle\ImagineBundle\Imagine\Filter\Loader\LoaderInterface;
-use EB\ImagineBundle\Filter\GrayscaleFilter;
 use Symfony\Component\HttpFoundation\ParameterBag;
 
 /**
@@ -18,7 +17,7 @@ class GrayscaleFilterLoader implements LoaderInterface
      *
      * @return GrayscaleFilter
      */
-    public function load(array $options = array())
+    public function load(array $options = [])
     {
         $conf = new ParameterBag($options);
         $size = $conf->get('size');

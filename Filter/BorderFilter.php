@@ -60,7 +60,7 @@ class BorderFilter implements FilterInterface
      * @param int     $angle [optional] The angle used to rotate the image
      * @param string  $bg    [optional] The color of the background
      */
-    public function __construct(array $size = array(), $width = null, $color = null, $angle = null, $bg = null)
+    public function __construct(array $size = [], $width = null, $color = null, $angle = null, $bg = null)
     {
         $this->size = $size ? new Box($size[0], $size[1]) : null;
         $this->width = $width ? : 1;

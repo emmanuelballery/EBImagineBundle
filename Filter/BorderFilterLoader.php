@@ -3,7 +3,6 @@
 namespace EB\ImagineBundle\Filter;
 
 use Avalanche\Bundle\ImagineBundle\Imagine\Filter\Loader\LoaderInterface;
-use EB\ImagineBundle\Filter\BorderFilter;
 use Symfony\Component\HttpFoundation\ParameterBag;
 
 /**
@@ -18,10 +17,10 @@ class BorderFilterLoader implements LoaderInterface
      *
      * @return BorderFilter
      */
-    public function load(array $options = array())
+    public function load(array $options = [])
     {
         $conf = new ParameterBag($options);
-        $size = $conf->get('size', array());
+        $size = $conf->get('size', []);
         $width = $conf->get('width', null);
         $color = $conf->get('color', null);
         $angle = $conf->get('angle', null);

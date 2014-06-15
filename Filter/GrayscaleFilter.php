@@ -54,7 +54,7 @@ class GrayscaleFilter implements FilterInterface
                 /** @var Color $color */
                 $color = $image->getColorAt($point);
                 $luminance = (int)round(0.2126 * $color->getRed() + 0.7152 * $color->getGreen() + 0.0722 * $color->getBlue());
-                $colorLuminance = new Color(array($luminance, $luminance, $luminance));
+                $colorLuminance = new Color([$luminance, $luminance, $luminance]);
                 $draw->dot($point, $colorLuminance);
             }
         }

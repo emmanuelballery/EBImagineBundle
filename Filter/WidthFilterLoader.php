@@ -3,7 +3,6 @@
 namespace EB\ImagineBundle\Filter;
 
 use Avalanche\Bundle\ImagineBundle\Imagine\Filter\Loader\LoaderInterface;
-use EB\ImagineBundle\Filter\WidthFilter;
 use Symfony\Component\HttpFoundation\ParameterBag;
 
 /**
@@ -18,7 +17,7 @@ class WidthFilterLoader implements LoaderInterface
      *
      * @return WidthFilter
      */
-    public function load(array $options = array())
+    public function load(array $options = [])
     {
         $conf = new ParameterBag($options);
         $width = $conf->get('width', 10);
