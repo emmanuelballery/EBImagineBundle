@@ -21,9 +21,8 @@
         "avalanche123/imagine-bundle": "*"
     },
     "autoload": {
-        "psr-0": {
-            "EB\\ImagineBundle": ""
+        "psr-4": {
+            "EB\\ImagineBundle\\": ""
         }
-    },
-    "target-dir": "EB/ImagineBundle"
+    }
 }
